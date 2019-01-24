@@ -1,0 +1,63 @@
+
+.siteName{
+    font-size: 30px;
+    color:blue;
+    background-color:lightgray;
+    text-align:center;
+    width:100%;
+    padding:10px;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 2px;
+}
+
+
+#buttonSection {
+    display:block;
+    margin-right: auto;
+    margin-left:auto;
+    margin-top:5%;
+    margin-bottom:5%;
+    font-family: 'Anton', sans-serif;
+}
+
+.animalButt {
+    margin:6px;
+    border-radius:20px;
+    color:blue;
+    background-color:lightgray;
+    font-size:22px;
+    font-weight: bold;
+    box-shadow: 5px 5px 5px rgba(0,0,0,.5);
+    transition: box-shadow .5s;
+    padding:7px;
+}
+
+#add-animal-form {
+    display:block;
+    margin-right: auto;
+    margin-left:auto;
+    font-family: 'Anton', sans-serif;
+    font-size: 22px;
+}
+
+.animalButt:hover{
+    box-shadow: 15px 15px 15px rgba(0,0,0,.5);
+    cursor:pointer;
+}
+
+#imgArea {
+    display:block;
+    margin-right:auto;
+    margin-left: auto;
+   
+    
+}
+
+.imgStyle {
+    margin:10px;
+    border:2px solid blue;
+    display:block;
+    margin-right:auto;
+    margin-left: auto;
+    
+}
