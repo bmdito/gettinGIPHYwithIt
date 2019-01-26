@@ -10,7 +10,7 @@ $(document).ready(function(){
     function renderButtons () {
 
         $("#buttonSection").empty();
-        $("#animal-input").empty();
+        $("#animal-input").val("");
 
         for(var i = 0; i<animalArray.length; i++) {
             var newButt = $("<button>");
@@ -42,7 +42,7 @@ $(document).ready(function(){
 
                 var gifDiv = $("<div>");
                 gifDiv.addClass("gif-box");
-
+                var ratingStuff = results[i].rating;
                 var newImg = $("<img>");
                 newImg.attr("src", results[i].images.fixed_height_still.url);
                 newImg.addClass("imgStyle");
@@ -50,7 +50,11 @@ $(document).ready(function(){
                 newImg.attr("state", "still");
                 newImg.attr("data-still", results[i].images.fixed_height_still.url);
                 newImg.attr("data-animate", results[i].images.fixed_height.url);
+                newImg.attr("rating", results[i].rating);
+               
+
                 gifDiv.append(newImg);
+                gifDiv.append("<p class='ratingStyle'>"+"Rating: "+ratingStuff+"</p>");
                 
                 $("#imgArea").prepend(gifDiv);
                 
@@ -95,11 +99,14 @@ $(document).ready(function(){
         event.preventDefault();
 
         var newAnimal = $("#animal-input").val().trim();
-                
-        animalArray.push(newAnimal);
-        console.log(animalArray);
-        renderButtons();
+        if(!animalArray.includes(newAnimal)){
 
+            
+            animalArray.push(newAnimal);
+            console.log(animalArray);
+            renderButtons();
+            
+        }
     });
 
     $(document).on("click", ".animalButt", displayGifs);

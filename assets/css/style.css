@@ -8,16 +8,44 @@
     padding:10px;
     font-family: 'Anton', sans-serif;
     letter-spacing: 2px;
+    border-radius:20px;
 }
 
+.toUse {
+    color:rgb(88, 73, 4);
+    background-color:lightgray;
+    border-radius:20px;
+    font-size: 18px;
+    font-weight:bold;
+    font-family: 'Anton', sans-serif;
+    line-height:20px;
+    padding:15px;
+    margin:2%;
+    letter-spacing:1px;
+
+}
 
 #buttonSection {
     display:block;
     margin-right: auto;
     margin-left:auto;
-    margin-top:5%;
-    margin-bottom:5%;
+    margin-top:2%;
+    margin-bottom:2%;
     font-family: 'Anton', sans-serif;
+    
+}
+
+.buttonRow {
+    border-top:2px solid blue;
+    border-bottom:2px solid blue;
+}
+
+.ratingStyle{
+    font-size:20px;
+    color:blue;
+    background-color:lightgray;
+    border-radius:20px;
+    text-align:center;
 }
 
 .animalButt {
